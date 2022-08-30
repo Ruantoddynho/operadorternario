@@ -1,0 +1,23 @@
+<meta charset="UTF-8" />
+<script>
+    //Problema: Nota para Conceito
+    // Converta a nota para conceito, conforme a tabela abaixo:
+    // Nota                     Conceito
+    // Entre 10.0 e 9.0            A
+    // Entre 8.9 e 8.0             B
+    // Entre 7.9 e 7.0             C
+    // Entre 6.9 e 6.0             D
+    // Entre 5.9 e zero            E
+
+    //Entrada
+    const notaboa = Number(prompt("Informe a sua nota"));
+
+    //Processamento
+    (notaboa <= 5.9) ? document.write(`Isso é um E`)
+    :(notaboa <= 6.9) ? document.write(`Isso é um D`)
+    :(notaboa <= 7.9) ? document.write(`Isso é um C`)
+    :(notaboa <= 8.9) ? document.write(`Isso é um B`)
+    : document.write(`Isso é um A`);
+    //Saída
+
+</script>
